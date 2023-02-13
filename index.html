@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>songbird</title>
+  <link rel="shortcut icon" href="assets/img/icon/bird-ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/player.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <script src="js/index.js" type="module" defer ></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="logo" href="index.html">
+        <div class="logo__wrapper">
+           <img class="logo__img" src="assets/img/logo.png" alt="logo">
+        </div>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item nav__list-item-main nav__list-item-active">
+            <a class="nav__list-link nav__list-link-main" href="#">HOME</a>
+          </li>
+          <li class="nav__list-item nav__list-item-game">
+            <a class="nav__list-link nav__list-link-game" href="#">GAME</a>
+          </li>
+          <li class="nav__list-item nav__list-item-lan">
+            <a class="nav__list-link nav__list-link-lan" data='en' href="#">EN</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="main__wrapper">
+      <img class="main__item-gif" src="assets/img/bird-anim-1.gif" alt="bird">
+      <img class="main__item-img" src="assets/img/bird-anim-quiz-2.png" alt="bird">
+    </div>
+  </div>
+
+  <div class="main-gallery">
+    <div class="container">
+      <div class="main-gallery__wrapper">
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="main-game">
+    <div class="container">
+      <div class="main-game__wrapper">
+      <div class="main-game__wrapper-player">
+  
+        <div class="player">
+          <div class="wrapper__player" style="background: rgba(255, 255, 255, 0.04);">
+              <div class="details">
+                  <div class="track-art"></div>
+                  <div class="track-name__wrapper">
+                    <div class="track-name">Ворон</div>
+                    <div class="track-artist">Corvus corax</div>
+                  </div>
+              </div>
+              <div class="slider__container">
+                  <div class="buttons">
+                    <div class="playpause-track"><i class="fa fa-play-circle fa-3x"></i></div>
+                  </div>
+                  <div class="current-time">00:14</div>
+                   <input type="range" min="1" max="100" value="0" class="seek__slider">
+                  <div class="total-duration">00:30</div>
+              </div>
+              <div class="slider__container">
+                  <i class="fa fa-volume-down"></i>
+                   <input type="range" min="0" max="100" value="99" class="volume__slider"> 
+                   <i class="fa fa-volume-up"></i>
+              </div>
+  
+          </div>
+        </div>
+  
+        <ul class="pagination">
+          <li class="pagi__item active">
+            <a class="pagi__link" href="#">Warm up</a>
+          </li>
+          <li class="pagi__item">
+            <a class="pagi__link" href="#">Passerines</a>
+          </li>
+          <li class="pagi__item">
+            <a class="pagi__link" href="#">Forest</a>
+          </li>
+          <li class="pagi__item">
+            <a class="pagi__link" href="#">Songbirds</a>
+          </li>
+          <li class="pagi__item">
+            <a class="pagi__link" href="#">Predatory</a>
+          </li>
+          <li class="pagi__item">
+            <a class="pagi__link" href="#">Sea</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="main-game__wrapper-ans">
+        <div class="main-game__item">
+          <ul class="answer">
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+            <li class="answer__item">
+              <a class="answer__item-link" id="link" href="#link"></a>
+            </li>
+          </ul>
+            <button class="btn-main btn-second">NEXT</button>
+        </div>
+        <div class="main-game__item">
+          <div class="player">
+            <div class="wrapper__player-dis" style="background: rgba(255, 255, 255, 0.04);">
+                <div class="details">
+                    <div class="track-art track-art-second"></div>
+                    <div class="track-name__wrapper">
+                      <div class="track-name-second">Ворон</div>
+                      <div class="track-artist-second">Corvus corax</div>
+                    </div>
+                </div>
+                <div class="slider__container">
+                    <div class="buttons buttons-second">
+                      <div class="playpause-track playpause-track-second"><i class="fa fa-play-circle fa-2x"></i></div>
+                    </div>
+                    <div class="current-time current-time-second">00:14</div>
+                     <input type="range" min="1" max="100" value="0" class="seek__slider seek__slider-second">
+                    <div class="total-duration total-duration-second">00:30</div>
+                </div>
+                <div class="slider__container">
+                    <i class="fa fa-volume-down fa-volume-down-second"></i>
+                     <input type="range" min="0" max="100" value="99" class="volume__slider volume__slider-second"> 
+                     <i class="fa fa-volume-up fa-volume-up-second"></i>
+                </div>
+                <div class="description__container-des">
+  
+                </div>
+    
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+      <div class="main-results">
+        <div class="main-results-wrapper">
+          <div class="main-results__descr">
+            <p class="main-results__message">Congratulations. The game is over.</p>
+            <span class="main-results__descr-text">
+              <span class="main-results__out"> Out of </span> 
+              <span class="main-results__out-num">30</span> 
+              <span class="main-results__possible"> possible points, you scored: </span> 
+              </span>
+            <span class="main-results__descr-score">25</span>
+          </div>
+          <div class="main-results__btn-wrapper">
+            <button class="btn-main main-results__btn-main">Play again!</button>
+          </div>
+          <div class="main-results__close">
+            <img src="assets/img/icon/close-mob-nav.svg" alt="close" class="main-results__close-img">
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__wrapper-rs">
+        <a href="https://rs.school/js/">
+          <img class="footer__item-rsschool" src="assets/img/icon/icon-rsschool.svg" alt="rsschool">
+        </a>
+        <div class="footer__wrapper-year">
+          <p class="footer__wrapper-year-rights">
+            All Rights Reserved © 2022
+          </p>
+        </div> 
+        <div class="footer__wrapper-year footer-game__wrapper-year">
+          <p class="footer__wrapper-year-score">
+            <span class="score-text">Score:</span> <span class="footer__wrapper-year-score-sum">0</span>
+          </p>
+        </div> 
+      </div>     
+      <div class="footer__wrapper-play">
+        <a href="#">
+          <img class="footer__item-img-play" src="assets/img/play.png" title="Gallery" alt="Gallery">
+        </a>
+      </div>
+      <div class="footer__wrapper-img">
+        <img class="footer__item-gif-footer" src="assets/img/bird-anim-2.gif" alt="bird">
+        <img class="footer__item-img-footer" src="assets/img/nop-mob.png" alt="nop">
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
